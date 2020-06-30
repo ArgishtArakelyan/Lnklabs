@@ -16,15 +16,26 @@ $(window).resize(function(){
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
+//     if (scroll > 0) {
+//         $('.navigation-wrap').addClass('bg-shap top');
+//         $(".black .menu .logo img").attr("src","../img/logo_white.png");
+//     }
+ 
+//     if (scroll < 400) {
+//         $('.navigation-wrap').removeClass('bg-shap');
+//         $(".black .menu .logo img").attr("src","../img/logo_black.png");
+//     }
+
+
+ 
     if (scroll > 0) {
-        $('.navigation-wrap').addClass('bg-shap top');
+        $('.temperature-scanner .top-wrap .menu').addClass('bg-shap');
     }
-    if (scroll < 50) {
-        $('.navigation-wrap').removeClass('top');
+
+    if (scroll < 72) {
+        $('.temperature-scanner .top-wrap .menu').removeClass('bg-shap');
     }
-    if (scroll < 400) {
-        $('.navigation-wrap').removeClass('bg-shap');
-    }
+
 });
 
 

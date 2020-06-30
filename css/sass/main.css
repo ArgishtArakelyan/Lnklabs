@@ -210,6 +210,19 @@ a {
   transition: all 0.3s ease;
 }
 
+.btn.border_white {
+  background: transparent;
+  border: 2px #ffffff solid;
+  border-radius: 2px;
+}
+
+.btn.border_blue {
+  background: transparent;
+  border: 2px #266BFF solid;
+  border-radius: 2px;
+  color: #266BFF;
+}
+
 .col-25 {
   float: left;
   width: calc( 25% - 12px);
@@ -306,8 +319,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 120px;
   position: relative;
+}
+
+.welcome-wrap.main {
+  margin-bottom: 120px;
+}
+
+.welcome-wrap.black {
+  min-height: auto;
+}
+
+.welcome-wrap.black header {
+  position: static;
+}
+
+.welcome-wrap.black header .inner-wrap .menu ul li a {
+  color: #19191A;
 }
 
 .welcome-wrap header {
@@ -318,18 +346,6 @@ a {
   top: 0;
   left: 0;
   z-index: 2;
-}
-
-.welcome-wrap header.top {
-  top: -72px;
-}
-
-.welcome-wrap header.bg-shap {
-  top: 0;
-  position: fixed;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
-  background: #0E0E39;
 }
 
 .welcome-wrap header .inner-wrap .menu {
@@ -372,6 +388,8 @@ a {
   font-weight: normal;
   font-size: 14px;
   color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .welcome-wrap .welcome_text {
@@ -707,5 +725,526 @@ footer .bottom-wrap .social-links ul li {
 
 footer .bottom-wrap .social-links ul li a {
   color: #FFFFFF;
+}
+
+.products-wrap .inner-wrap > .text {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.products-wrap .inner-wrap > .text h1 {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #19191A;
+}
+
+.products-wrap .inner-wrap > .text p {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 160%;
+  letter-spacing: -0.5px;
+  color: #19191A;
+}
+
+.products-wrap .inner-wrap .item-wrap {
+  margin: 90px 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products-wrap .inner-wrap .item-wrap .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #F7F7F7;
+  padding: 24px;
+  width: calc( 33.3% - 16px);
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.products-wrap .inner-wrap .item-wrap .item:nth-child(3n+3) {
+  margin-right: 0 !important;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .img {
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .text {
+  margin-top: 60px;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .text h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.75px;
+  color: #19191A;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .text p {
+  margin-top: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .text .price {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-wrap .inner-wrap .item-wrap .item .text .price span {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #19191A;
+}
+
+.temperature-scanner section.top-wrap {
+  height: 72px;
+}
+
+.temperature-scanner section.top-wrap .menu {
+  width: 100%;
+  background: #ffffff;
+}
+
+.temperature-scanner section.top-wrap .menu.bg-shap {
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap {
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > h1 {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.75px;
+  color: #19191A;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 88px;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div ul li {
+  list-style: none;
+  margin-left: 24px;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div ul li a {
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #5A5A5E;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div .price span {
+  margin-right: 32px;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #19191A;
+}
+
+.temperature-scanner section.top-wrap .menu .inner-wrap > div .price .btn {
+  padding: 12px 24px;
+}
+
+.temperature-scanner .title-img {
+  margin: 80px 0 120px;
+}
+
+.temperature-scanner .title-img .title-img-wrap .title {
+  margin: auto;
+  text-align: center;
+  max-width: 624px;
+}
+
+.temperature-scanner .title-img .title-img-wrap .title h1 {
+  font-weight: 600;
+  font-size: 52px;
+  letter-spacing: -1px;
+  line-height: 110%;
+  color: #19191A;
+}
+
+.temperature-scanner .title-img .title-img-wrap .title p {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 160%;
+  letter-spacing: -0.5px;
+  color: #19191A;
+}
+
+.temperature-scanner .title-img .title-img-wrap .img {
+  margin-top: 120px;
+}
+
+.temperature-scanner .title-img .title-img-wrap .img img {
+  width: 100%;
+}
+
+.temperature-scanner .imaging-technology {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.temperature-scanner .imaging-technology .top-wrap .inner-wrap {
+  max-width: 840px;
+}
+
+.temperature-scanner .imaging-technology .top-wrap .title {
+  max-width: 624px;
+  margin: auto;
+}
+
+.temperature-scanner .imaging-technology .top-wrap .title h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #19191A;
+}
+
+.temperature-scanner .imaging-technology .top-wrap .title p {
+  margin-top: 24px;
+  max-width: 624px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.temperature-scanner .imaging-technology .top-wrap ul {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.temperature-scanner .imaging-technology .top-wrap ul li {
+  max-width: 240px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #6749C0;
+}
+
+.temperature-scanner .imaging-technology .top-wrap ul li:nth-child(1), .temperature-scanner .imaging-technology .top-wrap ul li:nth-child(2) {
+  padding: 0 43px;
+}
+
+.temperature-scanner .imaging-technology .image-text {
+  margin-top: 120px;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 120px;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item:nth-child(2n+2) > .img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item > .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item > .img img {
+  max-width: 100%;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  margin: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item .text span {
+  display: block;
+  margin-bottom: 43px;
+  max-width: 408px;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item .text span .img img {
+  max-width: 100%;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item .text span h1 {
+  margin-top: 21px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.75px;
+  color: #19191A;
+}
+
+.temperature-scanner .imaging-technology .image-text .item-wrap .item .text span p {
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.temperature-scanner .features {
+  background: #F7F7F7;
+  padding: 120px 0 100px;
+}
+
+.temperature-scanner .features .inner-wrap .title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #19191A;
+}
+
+.temperature-scanner .features .inner-wrap .text {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.temperature-scanner .features .inner-wrap .text .left-wrap {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  padding-right: 64px;
+}
+
+.temperature-scanner .features .inner-wrap .text .left-wrap span {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.temperature-scanner .features .inner-wrap .text .left-wrap span h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #6749C0;
+}
+
+.temperature-scanner .features .inner-wrap .text .left-wrap span p {
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.temperature-scanner .features .inner-wrap .text .right-wrap {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.temperature-scanner .features .inner-wrap .text .right-wrap p {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.temperature-scanner .features .inner-wrap .text .right-wrap p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6749C0;
+}
+
+.temperature-scanner .features .inner-wrap .text .right-wrap p span {
+  display: block;
+}
+
+.temperature-scanner .features .inner-wrap .img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 120px;
+}
+
+.temperature-scanner .features .inner-wrap .img-wrap .img {
+  margin-bottom: 24px;
+}
+
+.temperature-scanner .features .inner-wrap .img-wrap .img:nth-child(2n+2) {
+  margin-left: 24px;
+}
+
+.temperature-scanner .features .inner-wrap .img-wrap .img img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.temperature-scanner .specifications {
+  padding: 120px 0 100px;
+}
+
+.temperature-scanner .specifications .inner-wrap .title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #19191A;
+}
+
+.temperature-scanner .specifications .inner-wrap .text {
+  margin-top: 60px;
+}
+
+.temperature-scanner .specifications .inner-wrap .text ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.temperature-scanner .specifications .inner-wrap .text ul li .left-wrap {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #5A5A5E;
+}
+
+.temperature-scanner .specifications .inner-wrap .text ul li .right-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 32px;
+}
+
+.temperature-scanner .specifications .inner-wrap .text ul li .right-wrap span {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #19191A;
 }
 /*# sourceMappingURL=main.css.map */
