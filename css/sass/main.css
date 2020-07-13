@@ -392,6 +392,53 @@ a {
   transition: all 0.3s ease;
 }
 
+.welcome-wrap header .inner-wrap .menu .menu-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-wrap header .inner-wrap .menu .menu-r .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #266BFF;
+}
+
+.welcome-wrap header .inner-wrap .menu .menu-r .cart img {
+  margin-right: 6px;
+}
+
+.welcome-wrap header .inner-wrap .menu .menu-r .cart span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4px;
+  height: 18px;
+  padding: 0 5.4px;
+  background: #266BFF;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+}
+
 .welcome-wrap .welcome_text {
   padding: 220px 0;
   width: 100%;
@@ -610,6 +657,229 @@ a {
   margin-top: 40px;
   margin-left: 0;
   padding-left: 0;
+}
+
+.tablet_size {
+  background: #19191A;
+  padding: 215px 0;
+}
+
+.tablet_size .inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tablet_size .inner-wrap .left-wrap {
+  padding-top: 48px;
+  padding-right: 132px;
+}
+
+.tablet_size .inner-wrap .left-wrap h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+.tablet_size .inner-wrap .left-wrap p {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #EDEDED;
+}
+
+.tablet_size .inner-wrap .left-wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #266BFF;
+}
+
+.tablet_size .inner-wrap .left-wrap a img {
+  margin-left: 6px;
+  width: 16.6px;
+}
+
+.text_img_top {
+  background: #F7F7F7;
+}
+
+.text_img_top .image-text {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%;
+}
+
+.text_img_top .image-text .item-wrap .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 180px 0 160px;
+}
+
+.text_img_top .image-text .item-wrap .item:nth-child(2n+2) > .img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.text_img_top .image-text .item-wrap .item > .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.text_img_top .image-text .item-wrap .item > .img img {
+  max-width: 100%;
+}
+
+.text_img_top .image-text .item-wrap .item .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  margin: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text_img_top .image-text .item-wrap .item .text span {
+  display: block;
+  margin-bottom: 43px;
+  max-width: 408px;
+}
+
+.text_img_top .image-text .item-wrap .item .text span .img img {
+  max-width: 100%;
+}
+
+.text_img_top .image-text .item-wrap .item .text span h1 {
+  margin-top: 21px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.75px;
+  color: #19191A;
+}
+
+.text_img_top .image-text .item-wrap .item .text span p {
+  margin-top: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.background-image-text {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image-text .inner-wrap {
+  max-width: 948px;
+}
+
+.background-image-text .inner-wrap .item-wrap {
+  padding: 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background-image-text .inner-wrap .item-wrap .item {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 8px;
+}
+
+.background-image-text .inner-wrap .item-wrap .item h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+.background-image-text .inner-wrap .item-wrap .item p {
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #EDEDED;
+}
+
+.UltraStrongCompatibility {
+  padding: 166px 0;
+  background: #F7F7F7;
+}
+
+.UltraStrongCompatibility .inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.UltraStrongCompatibility .inner-wrap .text {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+}
+
+.UltraStrongCompatibility .inner-wrap .text h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 115%;
+  letter-spacing: -1px;
+  color: #19191A;
+}
+
+.UltraStrongCompatibility .inner-wrap .text p {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.5px;
+  color: #28282A;
+}
+
+.UltraStrongCompatibility .inner-wrap .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 132px;
+}
+
+.UltraStrongCompatibility .inner-wrap .img img {
+  width: 100%;
 }
 
 footer {
@@ -953,15 +1223,20 @@ footer .bottom-wrap .social-links ul li a {
 
 .temperature-scanner .title-img .title-img-wrap .img {
   margin-top: 120px;
+  text-align: center;
 }
 
 .temperature-scanner .title-img .title-img-wrap .img img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .temperature-scanner .imaging-technology {
   margin-top: 120px;
   text-align: center;
+}
+
+.temperature-scanner .imaging-technology.PenTablet-page {
+  background: #ffffff;
 }
 
 .temperature-scanner .imaging-technology .top-wrap .inner-wrap {

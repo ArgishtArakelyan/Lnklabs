@@ -490,6 +490,42 @@ a {
                     }
                 }
 
+                .menu-r{
+                    display: flex;
+                    align-items: center;
+
+                    .cart{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 32px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.5px;
+                        color: #266BFF;
+
+                        img{
+                            margin-right: 6px;
+                        }
+
+                        span{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 4px;
+                            height: 18px;
+                            padding: 0 5.4px;
+                            background: #266BFF;
+                            border-radius: 50%;
+                            font-weight: 500;
+                            font-size: 12px;
+                            text-align: center;
+                            letter-spacing: -0.5px;
+                            color: #FFFFFF;
+                        }
+
+                    }
+                }
+
             }
         }
     }
@@ -690,6 +726,194 @@ a {
                         padding-left: 0;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+.tablet_size{
+    background: #19191A;
+    padding: 215px 0;
+    .inner-wrap{
+        display: flex;
+        .left-wrap{
+            padding-top: 48px;
+            padding-right: 132px;
+            h1{
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 115%;
+                letter-spacing: -1px;
+                color: #FFFFFF;
+            }
+
+            p{
+                margin-top: 24px;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 155%;
+                letter-spacing: -0.5px;
+                color: #EDEDED;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                margin-top: 60px;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.5px;
+                color: #266BFF;
+
+                img{
+                    margin-left: 6px;
+                    width: 16.6px;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+.text_img_top{
+    background: #F7F7F7;
+    .image-text{
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 50%;
+        .item-wrap{
+            .item{
+                display: flex;
+                align-items: center;
+                padding: 180px 0 160px;
+
+                &:nth-child(2n+2){
+                    >.img{
+                        order: 2;
+                    }
+                }
+
+                >.img{
+                    flex: 1;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+    
+                .text{
+                    flex: 1;
+                    text-align: left;
+                    margin: 0 24px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    span{
+                        display: block;
+                        margin-bottom: 43px;
+                        max-width: 408px;
+                        .img{
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+    
+                        h1{
+                            margin-top: 21px;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 120%;
+                            letter-spacing: -0.75px;
+                            color: #19191A;
+                        }
+    
+                        p{
+                            margin-top: 12px;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 155%;
+                            letter-spacing: -0.5px;
+                            color: #28282A;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-image-text{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .inner-wrap{
+        max-width: 948px;
+        .item-wrap{
+            padding: 160px 0;
+            display: flex;
+
+            .item{
+                text-align: center;
+                flex: 1;
+                margin: 0 8px;
+                h1{
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 115%;
+                    letter-spacing: -1px;
+                    color: #FFFFFF;
+                }
+
+                p{
+                    margin-top: 8px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 155%;
+                    letter-spacing: -0.5px;
+                    color: #EDEDED;
+                }
+            }
+        }
+    }
+}
+
+.UltraStrongCompatibility{
+    padding: 166px 0;
+    background: #F7F7F7;
+    .inner-wrap{
+        display: flex;
+        align-items: center;
+        .text{
+            flex: 0.6;
+            h1{
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 115%;
+                letter-spacing: -1px;
+                color: #19191A;
+                
+            }
+
+            p{
+                margin-top: 24px;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 155%;
+                letter-spacing: -0.5px;
+                color: #28282A;
+                
+            }
+        }
+
+        .img{
+            flex: 1;
+            margin-left: 132px;
+            img{
+                width: 100%;
             }
         }
     }
@@ -970,8 +1194,9 @@ footer{
     
             .img{
                 margin-top: 120px;
+                text-align: center;
                 img{
-                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }
@@ -981,6 +1206,9 @@ footer{
         margin-top: 120px;
         text-align: center;
 
+        &.PenTablet-page{
+            background: #ffffff;
+        }
 
         .top-wrap{
             .inner-wrap{max-width: 840px;}
