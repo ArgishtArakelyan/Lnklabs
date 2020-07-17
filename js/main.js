@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
     $('.AboutUs .item1').css('height', $('.AboutUs .item1 .img').height() + 32);
-   $('.interactive-panels .img-right-text').css('height', $('.interactive-panels .img-right-text .img').height() + 32);
+    $('.interactive-panels .img-right-text').css('height', $('.interactive-panels .img-right-text .img').height() + 32);
 });
 
 
