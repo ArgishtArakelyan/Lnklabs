@@ -223,6 +223,10 @@ a {
     max-width: 1272px;
     @include calc-width('100%', '-', '32px');
     margin: 0 auto;
+
+    &.max1056{
+        max-width: 1056px;
+    }
 }
 
 .btn {
@@ -1053,9 +1057,168 @@ footer{
                 }
             }
         }
-    
 }
 
+
+.shopping_cart{
+    margin-top: 60px;
+    margin-bottom: 120px;
+    .inner-wrap{
+        h1{
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: -0.75px;
+            color: #19191A;
+            span{
+                display: flex;
+                align-items: center;
+                margin-left: 8px;
+                margin-left: 8px;
+                height: 26px;
+                padding: 0 8.6px;
+                background: #266BFF;
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: -0.5px;
+                color: #FFFFFF;
+            }
+        }
+
+        .item-wrap{
+            margin-top: 8px;
+        }
+
+        .cart-wrap{
+            margin-top: 24px;
+
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+
+                .remove-item{
+                    right: 0;
+                    color: #A7A7A9;
+                }
+                .left{
+                    flex: 1;
+                }
+
+                .right{
+                    flex: 1;
+                }
+                .item{
+                    display: flex;
+                    align-items: center;
+                    font-weight: normal;
+                    font-size: 14px;
+                    letter-spacing: -0.5px;
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                    }
+                    img{
+                        width: 64px;
+                        margin-right: 16px;
+                    }
+                }
+                .right{
+                    display: flex;
+
+                    .item{
+                        flex: 0 0 33.3%;
+                        &:last-child{
+                            justify-content: flex-end;
+                            padding-right: 34px;
+                        }
+
+                        &.price{
+                            font-weight: 600;
+                        }
+
+
+                    }
+                }
+                &.title-wrap{
+                    .item{
+                        color: #5A5A5E;
+                    }
+                }
+    
+                &.item-cart{
+     
+                    border-top: solid #EDEDED 1px;
+                    padding: 20px 0;
+                    .item{
+                        color: #19191A;
+                    }
+                }
+            }
+        }
+
+
+        .total_price{
+            border-top: solid #EDEDED 1px;
+            padding: 16px 0 24px;
+            display: flex;
+            justify-content: flex-end;
+            .total_price_wrap{
+                flex: 0 0 332px;
+                .subtotal{
+                    >div{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 8px 24px;
+                        &.total_price{
+                            padding: 16px 24px;
+                            margin-top: 8px;
+                            span{
+                                font-size: 19px;
+                                font-weight: 600;
+                            }
+    
+                            h1{
+                                font-size: 19px;
+                                font-weight: 600;
+                            }
+                        }
+    
+                        span{
+                            font-weight: normal;
+                            font-size: 14px;
+                            letter-spacing: -0.5px;
+                            color: #28282A;
+                        }
+    
+                        h1{
+                            font-weight: 500;
+                            font-size: 14px;
+                            letter-spacing: -0.5px;
+                            color: #19191A;
+                        }
+                    }
+                }
+
+                .btn{
+                    width: 100%;
+                    background: #266BFF;
+                    margin-top: 8px;
+                    padding: 12px 32px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    border-radius: 2px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
 
 
 .product_card_wrap{
