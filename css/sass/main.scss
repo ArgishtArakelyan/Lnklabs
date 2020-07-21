@@ -1103,8 +1103,15 @@ footer{
 
                 .remove-item{
                     right: 0;
+                    font-size: 13px;
                     color: #A7A7A9;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #266BFF;
+                    }
                 }
+
                 .left{
                     flex: 1;
                 }

@@ -1074,7 +1074,13 @@ footer .bottom-wrap .social-links ul li a {
 
 .shopping_cart .inner-wrap .cart-wrap .flex .remove-item {
   right: 0;
+  font-size: 13px;
   color: #A7A7A9;
+  cursor: pointer;
+}
+
+.shopping_cart .inner-wrap .cart-wrap .flex .remove-item:hover {
+  color: #266BFF;
 }
 
 .shopping_cart .inner-wrap .cart-wrap .flex .left {
