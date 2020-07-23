@@ -74,3 +74,7 @@ $('.plus_minus .plus').click(function () {
     return false;
 });
 
+
+$( function() {
+    $( "#preferred_date" ).datepicker();
+  } );
