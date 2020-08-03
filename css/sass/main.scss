@@ -456,9 +456,60 @@ a {
         -webkit-appearance: none;
         appearance: none;
     }
+}
 
+.m-lines {
+    position: relative;  
+    cursor: pointer; 
+    z-index: 1001;
+    display: none;
+    &.open {
+        >div {
+            
+            >div {
+                &.two {
+                    opacity: 0;
+                }
 
+                &.one {
+                    -moz-transform: rotate(45deg) translate(4px, 6px);
+                    -ms-transform: rotate(45deg) translate(4px, 6px);
+                    -webkit-transform: rotate(45deg) translate(4px, 6px);
+                    transform: rotate(45deg) translate(4px, 6px);
+                    background-color: #fff;
+                    width: 32px;
+                }
 
+                &.three {
+                    -moz-transform: rotate(-45deg) translate(8px, -10px);
+                    -ms-transform: rotate(-45deg) translate(8px, -10px);
+                    -webkit-transform: rotate(-45deg) translate(8px, -10px);
+                    transform: rotate(-45deg) translate(8px, -10px);
+                    background-color: #fff;
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+    >div { 
+        display: inline-block;
+        >div {
+            width: 32px;
+            height: 2px;
+            background: #fff;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            border-radius: 1px;
+            margin: 8px auto;
+            backface-visibility: hidden;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+    }
 }
 
 
@@ -887,6 +938,7 @@ main{
                 justify-content: center;
                 >div{
                     max-width: 408px;
+                    padding-left: 32px;
                     p{
                         font-weight: normal;
                         font-size: 16px;

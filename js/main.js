@@ -78,3 +78,18 @@ $('.plus_minus .plus').click(function () {
 $( function() {
     $( "#preferred_date" ).datepicker();
   } );
+
+
+  $(document).on("click",".m-lines",function() {
+	$(this).toggleClass('open');
+
+    if ($(this).hasClass("open")) {
+        $('.popup_menu').fadeIn();
+        $('body').addClass('hidden-b');
+        $('.welcome-wrap header .inner-wrap .menu ul').addClass('open');
+    }else{
+        $('.popup_menu').fadeOut();
+        $('body').removeClass('hidden-b');
+        $('.welcome-wrap header .inner-wrap .menu ul').removeClass('open');
+    }
+}); 
