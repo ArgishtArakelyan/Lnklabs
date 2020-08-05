@@ -966,6 +966,7 @@ main{
         .left-wrap{
             padding-top: 48px;
             padding-right: 132px;
+            flex: 1;
             h1{
                 font-weight: 600;
                 font-size: 40px;
@@ -1000,6 +1001,12 @@ main{
             }
 
 
+        }
+
+        .right-wrap{
+            img{
+                width: 100%;
+            }
         }
     }
 }
@@ -1988,6 +1995,286 @@ footer{
                     }
                 }
             }
+
+
+                    .show_mobile {
+                        margin-top: 48px;
+                        display: none;
+                        .top-wrap {
+                            .title {
+                                font-weight: 600;
+                                font-size: 32px;
+                                line-height: 115%;
+                                letter-spacing: -1px;
+                                color: #19191A;
+                            }
+
+                            .price {
+                                margin-top: 16px;
+                                font-weight: normal;
+                                font-size: 19px;
+                                line-height: 160%;
+                                letter-spacing: -0.5px;
+                                color: #19191A;
+                            }
+                        }
+
+
+                        .extra-accessories {
+                            border-top: solid 1px #EDEDED;
+                            margin-top: 24px;
+                            padding-top: 24px;
+
+                            >h1 {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                letter-spacing: -0.5px;
+                                color: #6749C0;
+                            }
+
+                            &.product_card_1 {
+                                .item-wrap {
+                                    .item {
+
+                                        &:nth-child(1) {
+                                            margin-top: 16px;
+                                        }
+
+                                        h1 {
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 150%;
+                                            letter-spacing: -0.5px;
+                                            color: #19191A;
+                                        }
+
+                                        ul {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            margin-top: 12px;
+
+                                            li {
+                                                list-style: none;
+                                                @include calc-width('50%', '-', '12px');
+                                                margin-right: 24px;
+                                                margin-bottom: 16px;
+                                                padding: 16px;
+                                                border: 2px solid #f4f4f4;
+                                                border-radius: 2px;
+                                                text-align: center;
+                                                cursor: pointer;
+
+                                                &.active {
+                                                    border: 2px solid #266BFF;
+                                                }
+
+                                                &:nth-child(2n+2) {
+                                                    margin-right: 0 !important;
+                                                }
+
+                                                img {
+                                                    max-width: 100%;
+                                                }
+
+                                                .price {
+                                                    margin-top: 14px;
+                                                    font-weight: normal;
+                                                    font-size: 14px;
+                                                    line-height: 150%;
+                                                    text-align: center;
+                                                    letter-spacing: -0.5px;
+                                                    color: #5A5A5E;
+
+                                                    span {
+                                                        color: #6749C0;
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.product_card_2 {
+                                .item-wrap {
+                                    margin-top: 16px;
+                                    margin-bottom: 24px;
+
+                                    .item {
+                                        border: 2px solid #f4f4f4;
+                                        border-radius: 2px;
+                                        padding: 16px 24px;
+                                        margin-bottom: 12px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        cursor: pointer;
+
+                                        &.active {
+                                            border: 2px solid #266BFF;
+                                        }
+
+
+                                        .left {
+                                            display: flex;
+                                            align-items: center;
+
+                                            img {
+                                                max-width: 72px;
+                                            }
+
+                                            h1 {
+                                                margin-left: 24px;
+                                                font-weight: normal;
+                                                font-size: 14px;
+                                                line-height: 150%;
+                                                letter-spacing: -0.5px;
+                                                color: #19191A;
+                                            }
+                                        }
+
+                                        .price {
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 150%;
+                                            letter-spacing: -0.5px;
+                                            color: #6749C0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.product_card_3 {
+                                .item-wrap {
+                                    .item {
+                                        ul {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            margin-top: 12px;
+
+                                            li {
+                                                list-style: none;
+                                                @include calc-width('50%', '-', '12px');
+                                                margin-right: 24px;
+                                                margin-bottom: 16px;
+                                                padding: 16px;
+                                                border: 2px solid #f4f4f4;
+                                                border-radius: 2px;
+                                                text-align: center;
+                                                cursor: pointer;
+
+                                                &.active {
+                                                    border: 2px solid #266BFF;
+                                                }
+
+                                                &:nth-child(2n+2) {
+                                                    margin-right: 0 !important;
+                                                }
+
+                                                h1 {
+                                                    font-weight: 600;
+                                                    font-size: 40px;
+                                                    line-height: 115%;
+                                                    text-align: center;
+                                                    letter-spacing: -1px;
+                                                    color: #19191A;
+                                                }
+
+                                                .price {
+                                                    margin-top: 20px;
+                                                    font-weight: normal;
+                                                    font-size: 14px;
+                                                    line-height: 150%;
+                                                    text-align: center;
+                                                    letter-spacing: -0.5px;
+                                                    color: #6749C0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+
+
+                        .add-to-cart {
+                            border-top: solid 1px #EDEDED;
+                            margin-top: 16px;
+                            padding-top: 24px;
+
+                            .quantity {
+                                h1 {
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 150%;
+                                    letter-spacing: -0.5px;
+                                    color: #19191A;
+                                }
+                            }
+
+                            .add-wrap {
+                                margin-top: 24px;
+                                background: #F7F7F7;
+                                border-radius: 2px;
+                                padding: 24px;
+
+                                >h1 {
+                                    font-weight: 600;
+                                    font-size: 24px;
+                                    line-height: 120%;
+                                    letter-spacing: -0.75px;
+                                    color: #19191A;
+                                }
+
+                                .flex {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 16px;
+
+                                    span {
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        line-height: 150%;
+                                        letter-spacing: -0.5px;
+                                        color: #28282A;
+                                    }
+
+                                    >div {
+                                        display: flex;
+
+                                        h1 {
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 150%;
+                                            text-align: center;
+                                            letter-spacing: -0.5px;
+                                            color: #28282A;
+                                        }
+
+                                        .price {
+                                            margin-left: 40px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+
+                                .btn {
+                                    margin-top: 36px;
+                                    width: 100%;
+                                    padding: 12px 16px;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+ 
  
         }
 
@@ -2260,6 +2547,12 @@ footer{
                 }
             }
         }
+
+
+
+
+        
+
     }
 }
 
