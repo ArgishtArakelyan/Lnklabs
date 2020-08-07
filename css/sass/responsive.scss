@@ -4,6 +4,12 @@
 @import 'settings';
 
 
+@media screen and (max-width: 1200px){
+    .interactive-panels .specifications{
+        padding: 100px 0;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .interactive_panels.block2 .inner-wrap,
     .m-lines{
@@ -74,6 +80,7 @@
 
     .welcome-wrap header .inner-wrap .menu ul li.logo img{
         width: 72px;
+        filter: brightness(0) invert(1);
     }
     footer .bottom-wrap .menu ul li{
         margin-left: 24px;
@@ -86,7 +93,12 @@
 
 
 @media screen and (max-width: 992px) {
-
+.interactive-panels .specifications .inner-wrap .item-wrap .item{
+    min-width: 990px;
+}
+.interactive-panels .specifications .inner-wrap .item-wrap{
+    overflow: auto;
+}
     .temperature-scanner .imaging-technology .image-text .item-wrap .item{
         margin-bottom: 60px;
     }
@@ -172,12 +184,19 @@
     .AboutUs .item1 .img,
     .interactive-panels .img-right-text .img{
         width: 100%;
+        height: auto;
         padding: 16px;
         position: static;
         -webkit-transform: translateY(0%);
         transform: translateY(0%);
-    }
 
+        background-image: initial !important;
+    }
+    .AboutUs .item1 .img img,
+    .interactive-panels .img-right-text .img img{
+        width: 100%;
+        display: block;
+    }
     .AboutUs .item1 ,
     .interactive-panels .img-right-text{
         display: block;
@@ -226,13 +245,32 @@
     .product_card_wrap .inner-wrap>.right-wrap{
         display: none;
     }
-    .product_card_wrap .inner-wrap>.left-wrap .show_mobile {
+    .product_card_wrap .inner-wrap>.left-wrap .show_mobile,
+    .temperature-scanner section.top-wrap .menu .inner-wrap {
         display: block;
     }
 
     .product_card_wrap .inner-wrap>.left-wrap{
         width: 100%;
         padding: 0;
+    }
+
+    .temperature-scanner section.top-wrap .menu.bg-shap{
+        position: static;
+    }
+
+    .temperature-scanner section.top-wrap .menu .inner-wrap>div{
+        justify-content: space-between;
+    }
+
+    .temperature-scanner section.top-wrap .menu .inner-wrap>div ul li{
+        margin-left: 0;
+        margin-right: 24px;
+    }
+
+
+    .interactive-panels .BacktoBasics {
+        background-position: left;
     }
 }//media
 
@@ -281,7 +319,10 @@
     .temperature-scanner .imaging-technology .top-wrap ul,
     .temperature-scanner .features .inner-wrap .img-wrap,
     .background-image-text .inner-wrap .item-wrap ,
-    .UltraStrongCompatibility .inner-wrap {
+    .UltraStrongCompatibility .inner-wrap,
+    .shopping_cart .inner-wrap .cart-wrap .flex .item a,
+    .shopping_cart .inner-wrap .cart-wrap .flex .item img,
+    .products-wrap .inner-wrap .item-wrap {
         display: block;
     }
 
@@ -380,9 +421,7 @@
         margin-bottom: 60px;
     }
 
-    .products-wrap .inner-wrap .item-wrap{
-        display: block;
-    }
+ 
 
     .products-wrap .inner-wrap .item-wrap .item,
     .products-wrap .inner-wrap .item-wrap .item:nth-child(3n+3),
@@ -390,10 +429,64 @@
         width: 100%;
         max-width: 400px;
         margin: 0 auto 16px !important;
+        padding: 16px;
     }
 
- 
+    .checkout .inner-wrap .right-wrap .orders .item .left h1{
+        margin-left: 16px;
+    }
 
+    .temperature-scanner .specifications .inner-wrap .text ul,
+    .product_card_wrap .inner-wrap>.left-wrap .tab_wrap .tab_items ul li .specifications .inner-wrap .text ul{
+        overflow: auto;
+    }
+    .temperature-scanner .specifications .inner-wrap .text ul li,
+    .product_card_wrap .inner-wrap>.left-wrap .tab_wrap .tab_items ul li .specifications .inner-wrap .text ul li {
+        min-width: 600px;
+    }
+
+.shopping_cart .inner-wrap .cart-wrap .flex .item img{
+    margin-right: 0;
+    margin-bottom: 6px;
+}
+
+.shopping_cart .inner-wrap .cart-wrap .flex .left{
+    flex: 0.5;
+}
+
+.interactive-panels .BacktoBasics .inner-wrap,
+.interactive-panels .img-left-text ,
+.interactive-panels .icon-text-fl4,
+.temperature-scanner .features {
+    padding: 80px 0;
+}
+.interactive-panels .icon-text-fl4 .inner-wrap .item-wrap .item:last-child{
+    margin-bottom: 0;
+}
+
+.temperature-scanner .imaging-technology{
+    margin-top: 80px;
+}
+
+.temperature-scanner .features .inner-wrap .text .left-wrap{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.temperature-scanner .features .inner-wrap .text{
+    display: block;
+}
+
+    .temperature-scanner .features .inner-wrap .text .left-wrap span{
+        flex: 0 0 50%;
+        padding-right: 16px;
+    }
+
+    .temperature-scanner .title-img {
+        margin: 60px 0 60px;
+    }
 }//media
 
 
@@ -436,6 +529,56 @@
     .ScheduleDemo .inner-wrap .ScheduleDemo-wrap .row > div{
         margin: 16px 0 0;
     }
+
+    .shopping_cart .inner-wrap .total_price .total_price_wrap{
+        flex: 0 0 100%;
+    }
+
+
+    .shopping_cart .inner-wrap .cart-wrap .flex.title-wrap{
+        display: none;
+    }
+
+
+    .shopping_cart .inner-wrap .cart-wrap .flex,
+    .shopping_cart .inner-wrap .cart-wrap .flex .right {
+        display: block;
+    }
+
+    .shopping_cart .inner-wrap .cart-wrap .flex .item{
+        display: block;
+        margin-top: 12px;
+    }
+
+    .shopping_cart .inner-wrap .cart-wrap .flex .item>span{
+        display: inline-block;
+        font-weight: 600;
+        width: 80px;
+    }
+
+    .shopping_cart .inner-wrap .cart-wrap .flex .remove-item{
+        top: 32px;
+    }
+
+    .quantity{
+        display: inline-block;
+    }
+    .shopping_cart .inner-wrap .cart-wrap .flex.item-cart .plus_minus{
+        max-width: 160px;
+    }
+
+    .temperature-scanner section.top-wrap .menu .inner-wrap>div{
+        display: block;
+    }
+
+    .temperature-scanner section.top-wrap .menu .inner-wrap>div ul{
+        margin: 12px 0;
+    }
+
+    .temperature-scanner section.top-wrap,
+    .temperature-scanner section.top-wrap .menu .inner-wrap {
+        height: auto;
+    }
 }//media
 
 @media screen and (max-width: 400px) {
@@ -443,5 +586,10 @@
     .product_card_wrap .inner-wrap>.left-wrap .show_mobile .extra-accessories.product_card_1 .item-wrap .item ul li {
         width: 100%;
         margin-right: 0;
+    }
+
+    .temperature-scanner .features .inner-wrap .text .left-wrap span{
+        flex: 0 0 100%;
+        padding: 0;
     }
 }
