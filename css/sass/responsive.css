@@ -493,6 +493,9 @@
   .temperature-scanner section.top-wrap .menu .inner-wrap {
     height: auto;
   }
+  .temperature-scanner .title-img .title-img-wrap .img {
+    margin-top: 80px;
+  }
 }
 
 @media screen and (max-width: 400px) {
